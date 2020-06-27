@@ -211,13 +211,13 @@ return (
 
 <Button variant="contained" color="primary" onClick={this.handleClickOpen}>
 
-고객 추가하기
+Adding Customer
 
 </Button>
 
 <Dialog open={this.state.open} onClose={this.handleClose}>
 
-<DialogTitle>고객 추가</DialogTitle>
+<DialogTitle>Add customer</DialogTitle>
 
 <DialogContent>
 
@@ -227,19 +227,19 @@ return (
 
 <Button variant="contained" color="primary" component="span" name="file">
 
-{this.state.fileName === ''? "프로필 이미지 선택" : this.state.fileName}
+{this.state.fileName === ''? "Select profile image" : this.state.fileName}
 
 </Button>
 
 </label><br/>
 
-<TextField label="이름" type="text" name="userName" value={this.state.userName} onChange={this.handleValueChange} /><br/>
+<TextField label="Name" type="text" name="userName" value={this.state.userName} onChange={this.handleValueChange} /><br/>
 
-<TextField label="생년월일" type="text" name="birthday" value={this.state.birthday} onChange={this.handleValueChange} /><br/>
+<TextField label="Birthday" type="text" name="birthday" value={this.state.birthday} onChange={this.handleValueChange} /><br/>
 
-<TextField label="성별" type="text" name="gender" value={this.state.gender} onChange={this.handleValueChange} /><br/>
+<TextField label="Gender" type="text" name="gender" value={this.state.gender} onChange={this.handleValueChange} /><br/>
 
-<TextField label="직업" type="text" name="job" value={this.state.job} onChange={this.handleValueChange} /><br/>
+<TextField label="Job" type="text" name="job" value={this.state.job} onChange={this.handleValueChange} /><br/>
 
 </DialogContent>
 

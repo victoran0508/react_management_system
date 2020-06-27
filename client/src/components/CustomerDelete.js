@@ -83,7 +83,7 @@ return (
 
 <Button variant="contained" color="secondary" onClick={this.handleClickOpen}>
 
-삭제
+Delete
 
 </Button>
 
@@ -91,7 +91,7 @@ return (
 
 <DialogTitle onClose={this.handleClose}>
 
-삭제 경고
+Confirm to delete
 
 </DialogTitle>
 
@@ -99,7 +99,7 @@ return (
 
 <Typography gutterBottom>
 
-선택한 고객 정보가 삭제됩니다.
+Do you want to delete this customer information?
 
 </Typography>
 
@@ -107,9 +107,9 @@ return (
 
 <DialogActions>
 
-<Button variant="contained" color="primary" onClick={(e) => {this.deleteCustomer(this.props.id)}}>삭제</Button>
+<Button variant="contained" color="primary" onClick={(e) => {this.deleteCustomer(this.props.id)}}>Delete</Button>
 
-<Button variant="outlined" color="primary" onClick={this.handleClose}>닫기</Button>
+<Button variant="outlined" color="primary" onClick={this.handleClose}>Cancel</Button>
 
 </DialogActions>
 

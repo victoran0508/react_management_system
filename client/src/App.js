@@ -159,7 +159,7 @@ return <Customer stateRefresh={this.stateRefresh} key={c.id} id={c.id} image={c.
 }
 
 const { classes } = this.props;
-const cellList = ["번호", "프로필 이미지", "이름", "생년월일", "성별", "직업", "설정"]
+const cellList = ["#", "Avatar", "Name", "Birthday", "Gender", "Job", "Setting"]
 return (
 <div className={classes.root}>
 <AppBar position="static">
@@ -168,7 +168,7 @@ return (
 <MenuIcon />
 </IconButton>
 <Typography className={classes.title} variant="h6" color="inherit" noWrap>
-고객 관리 시스템
+Customer management system
 </Typography>
 <div className={classes.grow} />
 <div className={classes.search}>
@@ -176,7 +176,7 @@ return (
 <SearchIcon />
 </div>
 <InputBase
-placeholder="검색하기"
+placeholder="Search"
 classes={{
 root: classes.inputRoot,
 input: classes.inputInput,

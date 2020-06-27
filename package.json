@@ -4,13 +4,15 @@
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "build": "cd client && react-scripts build"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.16.4",
     "multer": "^1.4.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "react-scripts": "^3.4.1"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"
